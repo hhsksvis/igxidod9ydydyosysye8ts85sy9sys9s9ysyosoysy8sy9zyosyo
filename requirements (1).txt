@@ -1,0 +1,9 @@
+Flask
+requests
+google-generativeai
+apscheduler
+flask-cors
+transformers
+torch
+flax
+tensorflow
