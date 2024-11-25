@@ -1,4 +1,4 @@
-
+import os
 import json
 import requests
 import socket
@@ -12,7 +12,7 @@ from threading import Thread
 
 app = Flask(__name__)
 
-genai.configure(api_key="AIzaSyCTqTUGgSZSsQXo0MPd7Ig0jxPoDICSvV4")
+genai.configure(api_key="AIzaSyByvZgDWaSdmzxwz9H3s-vQ5z2iQJW6Eck")
 generation_config = {
     "temperature": 1.15,
     "top_p": 0.95,
