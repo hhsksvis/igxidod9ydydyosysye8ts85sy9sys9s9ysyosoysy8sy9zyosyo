@@ -1,3 +1,13 @@
-git add codemagic.yaml
-git commit -m 'Add first workflow'
-git push
+workflows:
+  version: 2
+  build:
+    name: Build and Deploy
+    steps:
+      - run:
+          name: Install dependencies
+          command: |
+            pip install -r requirements.txt
+      - run:
+          name: Run Flask app
+          command: |
+            python app.py
